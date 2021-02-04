@@ -1,0 +1,23 @@
+span.result{
+    position: relative;
+    width: 100%;
+}
+.result-enter {
+    transition: 0.5s;
+    transform: translateY(120%);
+}
+.result-enter.result-enter-active {
+    transform: translateY(120%);
+}
+.result-exit {
+    transform: translateY(0);
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.result-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+}
